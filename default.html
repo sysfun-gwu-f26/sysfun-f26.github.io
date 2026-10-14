@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }} | Course Project</title>
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body>
+
+  {% include navbar.html %}
+
+  <main class="main-content">
+    <header class="page-header">
+      <h1>{{ page.title }}</h1>
+      {% if page.subtitle %}
+        <p class="subtitle">{{ page.subtitle }}</p>
+      {% endif %}
+    </header>
+
+    <article class="content">
+      {{ content }}
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; {{ 'now' | date: "%Y" }} Course Project. Hosted on GitHub Pages.</p>
+  </footer>
+
+</body>
+</html>
