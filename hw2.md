@@ -11,6 +11,8 @@ In this multi-week project, you will build a fully functional, custom Unix shell
 
 By approaching development iteratively, you will design the data structures, dynamic memory management utilities, and low-level system call helpers in Weeks 1–3 so that assembling the full, interactive shell in Weeks 4–6 becomes an exercise in modular integration rather than a high-pressure build from scratch.
 
+For each week during the completion period of HW2 (Weeks 1 - 3), the content will correspond to the concepts taught in class. It is highly encouraged to meet these suggested target dates of completion for the various parts of each assignment to a) not fall behind but also b) understand every part of your code to make the implementation of HW3 (Weeks 4 - 6) easier. 
+
 <div class="callout arch-note">
   <div class="callout-title">Pedagogical Philosophy: The "Toolkit" Model</div>
   <ul>
