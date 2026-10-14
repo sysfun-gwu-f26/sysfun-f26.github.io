@@ -178,3 +178,179 @@ blockquote {
   border-top: 1px solid var(--border-color);
   margin-top: auto;
 }
+
+/* ==========================================================================
+   2. SYSTEMS COURSE COMPONENTS
+   ========================================================================== */
+
+/* --- Memory Grid & Register Visualization --- */
+.memory-grid {
+  display: grid;
+  grid-template-columns: 120px repeat(8, 1fr);
+  gap: 2px;
+  background-color: var(--border-color);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  overflow: hidden;
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  margin-bottom: 1.5rem;
+}
+
+.mem-header, .mem-addr, .mem-cell {
+  background-color: #ffffff;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.mem-header {
+  background-color: #f3f4f6;
+  font-weight: 600;
+  color: #4b5563;
+}
+
+.mem-addr {
+  background-color: #f9fafb;
+  color: var(--primary-color);
+  font-weight: 600;
+  border-right: 1px solid var(--border-color);
+}
+
+/* Specific Highlight Utilities */
+.mem-cell.highlight-stack { background-color: #fef3c7; color: #92400e; } /* Yellow for stack */
+.mem-cell.highlight-heap  { background-color: #d1fae5; color: #065f46; } /* Green for heap */
+.mem-cell.highlight-danger { background-color: #fee2e2; color: #991b1b; } /* Red for overflow/out-of-bounds */
+
+/* --- Multi-Type Callout Boxes --- */
+.callout {
+  padding: 1rem 1.25rem;
+  margin-bottom: 1.5rem;
+  border-left: 4px solid;
+  border-radius: 0 6px 6px 0;
+  font-size: 0.95rem;
+}
+
+.callout-title {
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+}
+
+/* Types */
+.callout.warning {
+  background-color: #fffbe0;
+  border-color: #f59e0b;
+  color: #78350f;
+}
+
+.callout.danger {
+  background-color: #fef2f2;
+  border-color: #ef4444;
+  color: #991b1b;
+}
+
+.callout.tip {
+  background-color: #ecfdf5;
+  border-color: #10b981;
+  color: #065f46;
+}
+
+.callout.arch-note {
+  background-color: #f3f0ff;
+  border-color: #8b5cf6;
+  color: #4c1d95;
+}
+
+/* --- Process & Pipeline Layout --- */
+.pipeline {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  overflow-x: auto;
+  padding: 1rem 0;
+  margin-bottom: 1.5rem;
+}
+
+.pipeline-stage {
+  flex: 1;
+  min-width: 110px;
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-top: 3px solid var(--primary-color);
+  padding: 0.75rem;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.pipeline-stage .stage-num {
+  font-size: 0.75rem;
+  color: #6b7280;
+  text-transform: uppercase;
+}
+
+.pipeline-stage .stage-name {
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-top: 0.25rem;
+}
+
+.pipeline-arrow {
+  color: #9ca3af;
+  font-weight: bold;
+}
+
+/* --- Side-by-Side Code Grid --- */
+.code-compare {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.code-col h4 {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #6b7280;
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .code-compare {
+    grid-template-columns: 1fr; /* Stack vertically on small screens */
+  }
+}
+
+/* --- Collapsible Accordions --- */
+details {
+  background-color: #ffffff;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1rem;
+  transition: background-color 0.2s ease;
+}
+
+details[open] {
+  background-color: #f9fafb;
+}
+
+summary {
+  font-weight: 600;
+  cursor: pointer;
+  color: var(--primary-color);
+  outline: none;
+}
+
+summary:hover {
+  color: var(--primary-hover);
+}
+
+details .details-content {
+  margin-top: 0.75rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--border-color);
+}
+
