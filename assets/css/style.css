@@ -1,4 +1,6 @@
-/* --- CSS Variables & Design System --- */
+/* ==========================================================================
+   1. CORE DESIGN SYSTEM & RESETS (Original CSS)
+   ========================================================================== */
 :root {
   --primary-color: #2563eb;
   --primary-hover: #1d4ed8;
