@@ -354,3 +354,28 @@ details .details-content {
   border-top: 1px solid var(--border-color);
 }
 
+/* Enable table borders and prevent double-border overlaps */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1rem 0;
+}
+
+/* Add grid lines to header and data cells */
+th, td {
+  border: 1px solid #ccc;
+  padding: 8px 12px;
+  text-align: left;
+}
+
+/* Optional: Add a distinct background to the table header */
+th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+/* Optional: Add alternating row colors for readability */
+tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
