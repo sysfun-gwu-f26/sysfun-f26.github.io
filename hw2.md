@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Homework 2
-subtitle: Multi-Week Unix Shell Project Specification (Weeks 1–3)
+subtitle: Creating a UNIX Shell (Weeks 1–3)
 permalink: /hw2
 ---
 
