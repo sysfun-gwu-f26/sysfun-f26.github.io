@@ -12,5 +12,5 @@ Welcome to the central distribution of content for our course project. This proj
 ### Quick Links
 - [Getting Started](./GettingStarted) - How to set up your environment for your machine
 - [Homework 2](./hw2) - Requirements for HW2 (Milestones 1 - 3).
-- [Homework 3](./hw3) - Requirements for HW3 (Milestones 4 - 6).
-- [Submission Instructions](./submission) - Guidelines on how to submit your work.
+<!--- [Homework 3](./hw3) - Requirements for HW3 (Milestones 4 - 6).-->
+<!--- [Submission Instructions](./submission) - Guidelines on how to submit your work.-->
