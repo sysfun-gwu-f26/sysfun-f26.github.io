@@ -5,7 +5,7 @@ subtitle: Creating a UNIX Shell (Weeks 1–3)
 permalink: /hw2
 ---
 
-## 2. Milestone 1 (Week 1): the data model, state, built-ins and input
+## Milestone 1 (Week 1): the data model, state, built-ins and input
 
 The goal of this week is to get comfortable with the toolchain and with C's types, control flow, structs and arrays — and,
 at the same time, define the vocabulary of the whole shell. No dynamic memory yet: everything here uses
