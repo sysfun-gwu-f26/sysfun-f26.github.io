@@ -2,7 +2,7 @@
 
 **Milestones 1–3 (Weeks 1–3) · C programming and the Unix system-call interface**
 
-In Weeks 4–6 you will assemble a working Unix shell, `mysh`, and extend it with your own OS features.
+In Weeks 4–6 you will assemble a working Unix shell, [mysh](mysh.zip), and extend it with your own OS features.
 Before that you need the parts. This assignment is those parts: **three milestones, one per week, each
 a set of small modules with a self-checking test suite.** Nothing you write here is throw-away. Every
 function is something the final shell calls, so the quality of your Week 1–3 code decides how smooth
