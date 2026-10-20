@@ -1,4 +1,4 @@
-# Build Your Own Shell — Part 1: The Foundations
+# Creating a UNIX Shell — The Foundations
 
 **Milestones 1–3 (Weeks 1–3) · C programming and the Unix system-call interface**
 
