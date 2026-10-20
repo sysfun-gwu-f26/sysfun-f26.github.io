@@ -7,16 +7,17 @@ permalink: /hw2
 
 ## 2. Milestone 1 (Week 1): the data model, state, built-ins and input
 
-**Goal.** Get comfortable with the toolchain and with C's types, control flow, structs and arrays — and,
+The goal of this week is to get comfortable with the toolchain and with C's types, control flow, structs and arrays — and,
 at the same time, define the vocabulary of the whole shell. No dynamic memory yet: everything here uses
 fixed-size arrays, which is why the limits (`MAX_ARGS`, `MAX_ARG_LEN`, ...) are constants in `command.h`.
 
-**Skills practised:** integer types and bit masks, `char` arrays and the terminating `'\0'`, off-by-one
+The concepts you will be implementing this week include: integer types and bit masks, `char` arrays and the terminating `'\0'`, off-by-one
 reasoning, `struct`s (including arrays inside structs), `enum`s, tables of structs, functions that report
 errors through return values, `snprintf`-style truncation.
 
-> **Read the header before each function.** The header comment is the contract: every limit, every
-> "returns -1 if...", every "leaves the struct unchanged". The tests check the contract, not your intentions.
+> **Read the header before each function.** The header before each function lives in the .h of the file.
+> Here you will find the documentation stating what each function will return and its behavior.
+> Read these headers to understand the purpose of each function before implementation. 
 
 ### 2.1 `command.c` — what is a command? (7 functions)
 
