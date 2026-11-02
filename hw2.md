@@ -269,6 +269,7 @@ similar information (slower, no recompilation).
 make test2      # expect 72/72
 make asan2      # must also be clean (leaks count as failures)
 make lint       # mystring.c / lexer.c restrictions
+```
 
 ## 4. Milestone 3 (Week 3): file descriptors, processes, pipes, signals
 
